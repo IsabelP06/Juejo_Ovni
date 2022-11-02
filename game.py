@@ -116,7 +116,7 @@ class Explosion(pygame.sprite.Sprite):
 				self.rect.center = center
 
 
-def mostrar_vienvenida_juego():
+def mostrar_bienvenida_juego():
 	screen.blit(background, [0,0])
 	agregar_texto(screen, "Ovni", 65, WIDTH // 2, HEIGHT // 4)
 	agregar_texto(screen, "Ovnis te estan atacando es momento de ver tu habilidad en combate", 14, WIDTH // 2, HEIGHT // 2)
@@ -167,7 +167,7 @@ running = True
 while running:
 	if game_over:
 
-		mostrar_vienvenida_juego()
+		mostrar_bienvenida_juego()
 
 		game_over = False
 		all_sprites = pygame.sprite.Group()
